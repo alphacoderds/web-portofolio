@@ -2,31 +2,32 @@ import { motion } from "framer-motion";
 
 export default function Experience() {
   const data = [
-    {
-      year: "Jan 2024 - Jun 2024",
-      title: "Software Developer Intern — PT Rekaindo Global Jasa (INKA Group)",
-      location: "Madiun, Jawa Timur, Indonesia",
-      logo: "/rekaindo.png",
-      cert: "/intern.png",
-      desc: [
-        "Merancang, mengembangkan, dan mengimplementasikan Rekachain App berbasis web dan Android.",
-        "Mengembangkan fitur baru, melakukan maintenance, serta optimalisasi fungsionalitas aplikasi.",
-        "Integrasi kamera pada Flutter, pengolahan data, dan peningkatan performa aplikasi.",
-        "Mendukung pengelolaan server menggunakan Proxmox Virtual Environment."
-      ]
-    },
-    {
-      year: "Sept 2024 - Des 2024",
-      title: "MSIB Kampus Merdeka Batch 7 – Bangkit Academy 2024 Graduate",
-      location: "Cloud Computing Cohort",
-      logo: "/bangkit.png",
-      cert: "/sertif/bangkit.jpg",
-      desc: [
-        "Mengikuti pembelajaran intensif mengenai Google Cloud Platform & software engineering.",
-        "Mengembangkan Cofflyze, aplikasi capstone pendeteksi penyakit daun kopi berbasis AI."
-      ]
-    }
-  ];
+  {
+    year: "Jan 2024 – Jun 2024",
+    title: "Software Developer Intern — PT Rekaindo Global Jasa (INKA Group)",
+    location: "Madiun, East Java, Indonesia",
+    logo: "/rekaindo.png",
+    cert: "/intern.png",
+    desc: [
+      "Designed, developed, and implemented the Rekachain App for both web and Android, improving the production tracking process to be more accurate and efficient.",
+      "Integrated camera-based scanning features in Flutter to enhance scanning accuracy and streamline user workflow.",
+      "Developed new features, fixed bugs, and optimized application performance for better stability and responsiveness.",
+      "Supported server deployment and system management using Proxmox Virtual Environment, ensuring secure and stable application operations."
+    ]
+  },
+  {
+    year: "Sept 2024 – Dec 2024",
+    title: "MSIB Kampus Merdeka Batch 7 – Bangkit Academy 2024 Graduate",
+    location: "Cloud Computing Cohort",
+    logo: "/bangkit.png",
+    cert: "/sertif/bangkit.jpg",
+    desc: [
+      "Completed more than 900 hours of intensive learning on Google Cloud Platform, machine learning, and software engineering.",
+      "Developed Cofflyze, an AI-powered capstone project for early detection of coffee leaf diseases to support farmers in early prevention.",
+      "Collaborated in a cross-functional team (Mobile Development, Cloud Computing, and Machine Learning) to deliver a high-quality final product."
+    ]
+  }
+];
 
   return (
     <section
@@ -49,68 +50,92 @@ export default function Experience() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-16">
-          Experience
-        </h2>
+        <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+  className="text-center mb-12"
+>
+  <h2 className="text-5xl sm:text-5xl font-extrabold text-gray-800">
+    My <span className="text-blue-600">Experiences</span>
+  </h2>
+
+  <p className="text-gray-700 text-xl mt-3 leading-8">
+    A journey of learning, building, and creating impactful technology.
+  </p>
+</motion.div>
+
+
 
         <div className="relative border-l-4 border-blue-500/70 pl-8 space-y-14">
 
           {data.map((item, index) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="relative group"
-            >
-              {/* Dot */}
-              <span className="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></span>
+  key={index}
+  initial={{ opacity: 0, x: -40 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: index * 0.2 }}
+  className="relative group"
+>
+  {/* Dot */}
+  <span className="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></span>
 
-              <div className="bg-white/70 backdrop-blur-md p-6 rounded-2xl shadow-md border border-white/40
-                              group-hover:shadow-xl transition duration-300">
-                
-                {/* LOGO + HEADER */}
-                <div className="flex items-center gap-4 mb-4">
-                  {item.logo && (
-                    <img
-                      src={item.logo}
-                      alt="logo"
-                      className="w-12 h-12 object-contain"
-                    />
-                  )}
+  <div className="bg-white/70 backdrop-blur-md p-6 rounded-2xl shadow-md border border-white/40
+                  group-hover:shadow-xl transition duration-300">
 
-                  <div>
-                    <h3 className="text-2xl font-bold text-blue-600">
-                      {item.year}
-                    </h3>
-                    <p className="text-lg font-semibold text-gray-800">
-                      {item.title}
-                    </p>
-                    <p className="text-sm text-gray-500">{item.location}</p>
-                  </div>
-                </div>
+    {/* LOGO + HEADER */}
+    <div className="flex items-center gap-4 mb-4">
+      {item.logo && (
+        <img
+          src={item.logo}
+          className="w-12 h-12 object-contain"
+        />
+      )}
 
-                {/* DESCRIPTION */}
-                <ul className="list-disc pl-5 mt-2 text-gray-700 space-y-1">
-                  {item.desc.map((d, i) => (
-                    <li key={i}>{d}</li>
-                  ))}
-                </ul>
+      <div>
+        <h3 className="text-2xl font-bold text-blue-600">{item.year}</h3>
+        <p className="text-lg font-semibold text-gray-800">{item.title}</p>
+        <p className="text-sm text-gray-500">{item.location}</p>
+      </div>
+    </div>
 
-                {/* CERTIFICATE BUTTON */}
-                {item.cert && (
-                  <a
-                    href={item.cert}
-                    target="_blank"
-                    className="inline-block mt-4 text-blue-700 font-semibold underline hover:text-blue-900"
-                  >
-                    Lihat Sertifikat
-                  </a>
-                )}
+    {/* DESCRIPTION LIST */}
+    <ul className="list-disc pl-5 mt-2 text-gray-700 space-y-1">
+      {item.desc.map((d, i) => (
+        <li key={i}>{d}</li>
+      ))}
+    </ul>
 
-              </div>
-            </motion.div>
+    {/* ACTION BUTTONS */}
+    <div className="flex gap-4 mt-5">
+
+      {/* Example Action Button */}
+      <a
+        href="#"
+        className="px-4 py-2 bg-blue-600 text-white rounded-xl font-medium
+                   hover:bg-blue-700 hover:-translate-y-1 transition"
+      >
+        Detail Pekerjaan
+      </a>
+
+      {/* Certificate Button (only if exists) */}
+      {item.cert && (
+        <a
+          href={item.cert}
+          target="_blank"
+          className="px-4 py-2 bg-white border border-blue-600 text-blue-700 rounded-xl font-medium
+                     hover:bg-blue-50 hover:-translate-y-1 transition"
+        >
+          Lihat Sertifikat
+        </a>
+      )}
+    </div>
+
+  </div>
+</motion.div>
+
           ))}
 
         </div>
