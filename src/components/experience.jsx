@@ -5,7 +5,7 @@ export default function Experience() {
   {
     year: "Jan 2024 – Jun 2024",
     title: "Software Developer Intern — PT Rekaindo Global Jasa (INKA Group)",
-    location: "Madiun, East Java, Indonesia",
+    location: "Madiun, East Java, Indonesian",
     logo: "/rekaindo.png",
     cert: "/intern.png",
     desc: [
@@ -111,15 +111,6 @@ export default function Experience() {
     {/* ACTION BUTTONS */}
     <div className="flex gap-4 mt-5">
 
-      {/* Example Action Button */}
-      <a
-        href="#"
-        className="px-4 py-2 bg-blue-600 text-white rounded-xl font-medium
-                   hover:bg-blue-700 hover:-translate-y-1 transition"
-      >
-        Detail Pekerjaan
-      </a>
-
       {/* Certificate Button (only if exists) */}
       {item.cert && (
         <a
@@ -128,7 +119,7 @@ export default function Experience() {
           className="px-4 py-2 bg-white border border-blue-600 text-blue-700 rounded-xl font-medium
                      hover:bg-blue-50 hover:-translate-y-1 transition"
         >
-          Lihat Sertifikat
+          View Certificate
         </a>
       )}
     </div>
