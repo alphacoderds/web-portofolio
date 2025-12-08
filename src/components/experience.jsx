@@ -116,8 +116,8 @@ export default function Experience() {
         <a
           href={item.cert}
           target="_blank"
-          className="px-4 py-2 bg-white border border-blue-600 text-blue-700 rounded-xl font-medium
-                     hover:bg-blue-50 hover:-translate-y-1 transition"
+          className="px-4 py-2 bg-blue-600 text-white rounded-xl font-medium
+                   hover:bg-blue-700 hover:-translate-y-1 transition"
         >
           View Certificate
         </a>
