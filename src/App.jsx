@@ -75,6 +75,17 @@ export default function App() {
     github: "https://github.com/ritaapr/Dies-Craft",
     tech: ["Laravel", "MySQL"]
   },
+
+  {
+  id: 6,
+  name: "MBTI Chatbot Edukasi",
+  desc: "A Streamlit-based educational MBTI chatbot that provides a personality quiz and an interactive AI assistant powered by Google Gemini and LangChain.",
+  img: "/mbti.jpg",
+  github: "https://github.com/alphacoderds/MBTI-Chatbot-Edukasi",
+  demo: "https://mbti-chatbot-edukasi-wejeksbguywbnoburxcuwb.streamlit.app/",
+  tech: [ "Streamlit", "Python", "GoogleAPI", "LangGraph", "Matplotlib" ]
+}
+
 ];
 
   return (

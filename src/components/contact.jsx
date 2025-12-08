@@ -95,7 +95,7 @@ export default function Contact() {
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         © 2025 Rahmanda Putri Radisa — All Rights Reserved
-        <p className="text-sm">Last Update: November 2025</p>
+        <p className="text-sm">Last Update: Desember 2025</p>
       </motion.footer>
     </section>
   );

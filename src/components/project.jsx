@@ -18,7 +18,8 @@ export default function Project({ projects }) {
     GCP: "gcp.svg", AWS: "aws.svg", AlibabaCloud: "alibabacloud.svg",
     Docker: "docker.svg", Figma: "figma.svg", Flask: "flask.svg",
     Git: "git.svg", Github: "github.svg", Jupyter: "jupyter.svg",
-    Postman: "postman.svg", VSCode: "vscode.png",
+    Postman: "postman.svg", VSCode: "vscode.png", Streamlit: "Streamlit.svg",
+    LangGraph: "langgraph.svg", GoogleAPI: "Google_AI_Studio_icon.svg", 
   };
 
   return (

@@ -16,6 +16,7 @@ const skillCategories = [
     skills: [
       { name: "Firebase" }, { name: "Flask" }, { name: "Laravel" },
       { name: "MySQL" }, { name: "NodeJS" }, { name: "PostgreSQL" },
+      { name: "Streamlit" }
     ]
   },
   {
@@ -29,13 +30,13 @@ const skillCategories = [
     skills: [
       { name: "Keras" }, { name: "Matplotlib" }, { name: "NumPy" },
       { name: "Pandas" }, { name: "Python" }, { name: "Scikitlearn" },
-      { name: "Seaborn" }, { name: "TensorFlow" },
+      { name: "Seaborn" }, { name: "TensorFlow" }, { name: "LangGraph"}
     ]
   },
   {
     category: "Cloud Computing",
     skills: [
-      { name: "AlibabaCloud" }, { name: "GCP" }, { name: "AWS" },
+      { name: "AlibabaCloud" }, { name: "GCP" }, { name: "AWS" }, { name: "GoogleAPI" }
     ]
   },
   {
@@ -56,15 +57,15 @@ const iconMap = {
   TailwindCSS: "tailwind.svg", JavaScript: "javascript.svg",
 
   NodeJS: "node.svg", Firebase: "firebase.svg", Laravel: "laravel.svg",
-  MySQL: "mysql.svg", PostgreSQL: "postgresql.svg",
+  MySQL: "mysql.svg", PostgreSQL: "postgresql.svg", Streamlit: "Streamlit.svg",
 
   Flutter: "flutter.svg", Dart: "dart.svg", Kotlin: "kotlin.png",
 
   Python: "python.svg", TensorFlow: "tensorflow.svg", Keras: "keras.svg",
   Scikitlearn: "scikitlearn.svg", Pandas: "pandas.svg",
-  NumPy: "numpy.svg", Matplotlib: "matplotlib.svg", Seaborn: "seaborn.svg",
+  NumPy: "numpy.svg", Matplotlib: "matplotlib.svg", Seaborn: "seaborn.svg", LangGraph: "langgraph.svg",
 
-  GCP: "gcp.svg", AWS: "aws.svg", AlibabaCloud: "alibabacloud.svg",
+  GCP: "gcp.svg", AWS: "aws.svg", AlibabaCloud: "alibabacloud.svg", GoogleAPI: "Google_AI_Studio_icon.svg",
 
   Docker: "docker.svg", Figma: "figma.svg", Flask: "flask.svg",
   Git: "git.svg", Github: "github.svg", Jupyter: "jupyter.svg",

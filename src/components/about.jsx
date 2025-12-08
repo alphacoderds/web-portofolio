@@ -31,7 +31,7 @@ export default function About() {
 
           {/* BUTTON - VIEW CV */}
           <motion.a
-            href="/cv.pdf"
+            href="https://drive.google.com/file/d/1MCK9xKATOWivj_-nSFi84gC_BPgIalKr/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
