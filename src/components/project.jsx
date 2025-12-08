@@ -104,18 +104,33 @@ export default function Project({ projects }) {
         ))}
       </div>
 
-      {/* VIEW MORE BUTTON */}
-      {visible < projects.length && (
-        <div className="text-center mt-10">
-          <button
-            onClick={() => setVisible(projects.length)}
-            className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 
-                       text-white transition shadow-lg"
-          >
-            View More
-          </button>
-        </div>
-      )}
+  {/* VIEW MORE BUTTON */}
+{visible < projects.length ? (
+  <div className="text-center mt-10">
+    <button
+      onClick={() => setVisible(projects.length)}
+      className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 
+                 text-white transition shadow-lg"
+    >
+      View More
+    </button>
+  </div>
+) : (
+  <div className="text-center mt-10">
+    <a
+      href="https://github.com/alphacoderds"
+      target="_blank"
+      rel="noreferrer"
+      className="px-6 py-3 rounded-full bg-gray-800 hover:bg-black 
+                 text-white transition shadow-lg flex items-center justify-center gap-2 mx-auto w-fit"
+    >
+      <FaGithub size={20} /> See More on GitHub
+    </a>
+  </div>
+)}
+
+      
     </section>
   );
 }
+
