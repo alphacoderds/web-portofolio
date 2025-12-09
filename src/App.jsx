@@ -55,7 +55,15 @@ export default function App() {
     img: "/cofflyze.png",
     github: "https://github.com/alphacoderds/Cofflyze-Team-Capstone",
     demo: "https://drive.google.com/file/d/1tyKU3ofDSi8wvupyHXFDhWG1P0_6m5X7/view?usp=sharing",
-    tech: ["Kotlin", "Python", "GCP", "Flask", "NodeJS"]
+    tech: ["Kotlin", "Python", "GCP", "Flask", "NodeJS"],
+    features: [
+    { title: "Disease Detection", desc: "Detects coffee leaf diseases using a CNN model for accurate image-based classification." },
+    { title: "Real-time Scanning", desc: "Allows users to capture leaf images through the camera or select from the gallery." },
+    { title: "Disease Information", desc: "Provides detailed explanations including symptoms, causes, risk factors, and impacts." },
+    { title: "Treatment & Prevention", desc: "Offers actionable recommendations for treatment, handling, and preventive steps." },
+    { title: "Detection History", desc: "Stores past detection records to help users track plant health over time." },
+    { title: "Cloud-based Processing", desc: "Processes images through a Flask & GCP-powered API for more accurate and scalable AI inference." }
+  ]
   },
 
   {
@@ -64,7 +72,18 @@ export default function App() {
     desc: "An internal admin platform designed to manage production data, monitor workflow progress, validate user scans, and oversee the entire RekaChain manufacturing process.",
     img: "/rekachain website.png",
     github: "https://github.com/alphacoderds/ProjectWebAdminRekaChain",
-    tech: ["Flutter", "Dart", "MySQL"]
+    tech: ["Flutter", "Dart", "MySQL"],
+    features: [
+  { title: "Dashboard Monitoring", desc: "Visualizes production data using charts to track progress in real time." },
+  { title: "Production Data Input", desc: "Allows admins to input material, panel, lot code, and workflow information." },
+  { title: "STTPR Reporting", desc: "Provides a reporting module for STTPR documents to support administrative processes." },
+  { title: "Material Planning", desc: "Helps manage material requirements and production planning across projects." },
+  { title: "Document Upload", desc: "Enables uploading of supporting documents such as technical sheets or project files." },
+  { title: "After-Sales Module", desc: "Handles after-sales service records and ensures proper follow-up." },
+  { title: "User & Admin Management", desc: "Manages admin accounts, field users, and access permissions." },
+  { title: "Project Management", desc: "Used to create, update, and track multiple projects within the system." },
+  { title: "Scan Validation", desc: "Validates QR scan results from the mobile app to ensure accurate production data." }
+]
   },
 
   {
@@ -73,7 +92,19 @@ export default function App() {
     desc: "A modern and responsive landing page created for the DiesCraft organization to showcase their products, activities, and community presence.",
     img: "/Presentation Proposal Portofolio Modern Putih Krem (1).png",
     github: "https://github.com/ritaapr/Dies-Craft",
-    tech: ["Laravel", "MySQL"]
+    tech: ["ReactJS", "CSS", "HTML", "JavaScript", "TailwindCSS", "Vercel"],
+    features: [
+  { title: "Landing Page Showcase", desc: "Displays the organization’s identity, mission, and community activities." },
+  { title: "Product Gallery", desc: "Shows a collection of handmade crafts with images and descriptions." },
+  { title: "Responsive Layout", desc: "Fully responsive design that works smoothly on desktop and mobile devices." },
+  { title: "Navigation Menu", desc: "Simple and clean navigation for browsing sections easily." },
+  { title: "Contact Information", desc: "Provides contact and social media links for visitors to connect with the team." },
+  { 
+    title: "Maps Location Integration", 
+    desc: "Integrasi lokasi menggunakan Google Maps untuk menampilkan alamat workshop atau pusat kegiatan DiesCraft secara akurat." 
+  }
+]
+
   },
 
   {
@@ -83,7 +114,13 @@ export default function App() {
   img: "/mbti.jpg",
   github: "https://github.com/alphacoderds/MBTI-Chatbot-Edukasi",
   demo: "https://mbti-chatbot-edukasi-wejeksbguywbnoburxcuwb.streamlit.app/",
-  tech: [ "Streamlit", "Python", "GoogleAPI", "LangGraph", "Matplotlib" ]
+  tech: [ "Streamlit", "Python", "GoogleAPI", "LangGraph", "Matplotlib" ],
+  features: [
+  { title: "MBTI Personality Quiz", desc: "Interactive quiz that identifies the user’s MBTI personality type." },
+  { title: "AI Chat Assistant", desc: "Chatbot powered by Google Gemini and LangChain for personalized guidance." },
+  { title: "Learning Resources", desc: "Provides explanations, insights, and educational content about MBTI types." },
+  { title: "Web-Based Interface", desc: "Built with Streamlit for a clean, fast, and accessible user experience." }
+]
 }
 
 ];

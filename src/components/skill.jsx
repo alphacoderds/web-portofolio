@@ -8,7 +8,8 @@ const skillCategories = [
     category: "Frontend Development",
     skills: [
       { name: "CSS" }, { name: "HTML" }, { name: "JavaScript" },
-      { name: "ReactJS" }, { name: "TailwindCSS" },
+      { name: "ReactJS" }, { name: "TailwindCSS" }, {name: "Bootstrap"},
+      { name: "MaterialUI"}, { name: "Vercel"}, { name: "Netlify"},
     ]
   },
   {
@@ -34,7 +35,7 @@ const skillCategories = [
     ]
   },
   {
-    category: "Cloud Computing",
+    category: "Cloud Computing & AI",
     skills: [
       { name: "AlibabaCloud" }, { name: "GCP" }, { name: "AWS" }, { name: "GoogleAPI" }
     ]
@@ -44,7 +45,7 @@ const skillCategories = [
     skills: [
       { name: "Git" }, { name: "Github" }, { name: "Figma" },
       { name: "Postman" }, { name: "VSCode" }, { name: "Jupyter" }, { name: "Docker" },
-      { name: "GoogleColab"}
+      { name: "GoogleColab"}, { name: "Anaconda" }, { name: "Canva" }, { name: "CorelDraw"}
     ]
   }
 ];
@@ -54,7 +55,8 @@ const skillCategories = [
 // ===============================
 const iconMap = {
   ReactJS: "react.svg", HTML: "html.svg", CSS: "css.svg",
-  TailwindCSS: "tailwind.svg", JavaScript: "javascript.svg",
+  TailwindCSS: "tailwind.svg", JavaScript: "javascript.svg", Bootstrap: "bootstrap.svg",
+  Vercel: "vercel.svg", Netlify: "netlify.svg", MaterialUI : "materialui.svg",
 
   NodeJS: "node.svg", Firebase: "firebase.svg", Laravel: "laravel.svg",
   MySQL: "mysql.svg", PostgreSQL: "postgresql.svg", Streamlit: "Streamlit.svg",
@@ -69,7 +71,7 @@ const iconMap = {
 
   Docker: "docker.svg", Figma: "figma.svg", Flask: "flask.svg",
   Git: "git.svg", Github: "github.svg", Jupyter: "jupyter.svg",
-  Postman: "postman.svg", VSCode: "vscode.png", GoogleColab: "gcolab.svg",
+  Postman: "postman.svg", VSCode: "vscode.png", GoogleColab: "gcolab.svg", CorelDraw: "coreldraw.svg", Anaconda: "anaconda.svg", Canva: "canva.svg"
 };
 
 // CATEGORY COLORS

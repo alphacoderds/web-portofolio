@@ -20,7 +20,9 @@ export default function ProjectDetail({ projects }) {
     GCP: "gcp.svg", AWS: "aws.svg", AlibabaCloud: "alibabacloud.svg",
     Docker: "docker.svg", Figma: "figma.svg", Flask: "flask.svg",
     Git: "git.svg", Github: "github.svg", Jupyter: "jupyter.svg",
-    Postman: "postman.svg", VSCode: "vscode.png",
+    Postman: "postman.svg", VSCode: "vscode.png", Vercel: "vercel.svg", Netlify: "netlify.svg", Streamlit: "Streamlit.svg",
+    LangGraph: "langgraph.svg", GoogleAPI: "Google_AI_Studio_icon.svg", 
+    Bootstrap: "bootstrap.svg", MaterialUI : "materialui.svg"
   };
 
   useEffect(() => {
@@ -107,31 +109,24 @@ export default function ProjectDetail({ projects }) {
             <p className="text-gray-700">{project.desc}</p>
 
             {/* Tech Stack */}
-            <div className="pt-2">
-              <h2 className="text-lg font-semibold text-gray-800 mb-2">Tech Stack</h2>
-              <div className="flex flex-wrap gap-3">
-  {project.tech.map((t, i) => (
-    <div
-      key={i}
-      className="flex items-center gap-2 px-3 py-2 bg-blue-50 rounded-xl shadow-sm"
-    >
-      <img
-        src={`/${iconMap[t]}`}
-        alt={t}
-        className="w-5 h-5 object-contain"
-      />
-      <span className="text-sm font-medium text-blue-800">{t}</span>
-    </div>
-  ))}
+<div className="pt-2">
+  <h2 className="text-lg font-semibold text-gray-800 mb-2">Tech Stack</h2>
+  <div className="flex flex-wrap gap-3">
+    {project.tech.map((t, i) => (
+      <div
+        key={i}
+        className="flex items-center gap-2 px-3 py-2 bg-blue-50 rounded-xl shadow-sm"
+      >
+        <img
+          src={`/${iconMap[t]}`}
+          alt={t}
+          className="w-5 h-5 object-contain"
+        />
+        <span className="text-sm font-medium text-blue-800">{t}</span>
+      </div>
+    ))}
+  </div>
 </div>
-
-
-              {project.tech.length > 0 && (
-                <p className="mt-2 text-gray-600 text-sm">
-                  Main technologies include Flutter for UI and logic, TensorFlow Lite for AI model, Firebase for backend services, and Google Cloud Platform for cloud deployment.
-                </p>
-              )}
-            </div>
 
             {/* Links */}
             <div className="flex gap-4 mt-4 flex-wrap">

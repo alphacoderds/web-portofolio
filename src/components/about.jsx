@@ -26,7 +26,7 @@ export default function About() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-gray-800 leading-relaxed text-lg md: text-3xl"
           >
-            An Information Technology graduate specializing in software development and cloud computing. Experienced in building web and mobile applications, managing backend services, and utilizing modern development tools. Skilled in API integration, technical documentation, and collaborative development workflows. Familiar with cloud platforms—especially Google Cloud Platform—for deploying serverless architectures, managing compute services, and optimizing application performance. Committed to continuous learning and delivering clean, scalable, and reliable technology solutions.
+            An Information Technology graduate specializing in software development and cloud computing. Experienced in building web and mobile applications, managing backend services, and utilizing modern development tools. Skilled in API integration, technical documentation, and collaborative development workflows. Familiar with cloud platforms especially Google Cloud Platform—for deploying serverless architectures, managing compute services, and optimizing application performance. Committed to continuous learning and delivering clean, scalable, and reliable technology solutions.
           </motion.p>
 
           {/* BUTTON - VIEW CV */}

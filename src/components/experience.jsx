@@ -20,7 +20,7 @@ export default function Experience() {
     title: "MSIB Kampus Merdeka Batch 7 – Bangkit Academy 2024 Graduate",
     location: "Cloud Computing Cohort",
     logo: "/bangkit.png",
-    cert: "/sertif/bangkit.jpg",
+    cert: "/sertif/bangkit.png",
     desc: [
       "Completed more than 900 hours of intensive learning on Google Cloud Platform, machine learning, and software engineering.",
       "Developed Cofflyze, an AI-powered capstone project for early detection of coffee leaf diseases to support farmers in early prevention.",

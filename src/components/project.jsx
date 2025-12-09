@@ -20,6 +20,8 @@ export default function Project({ projects }) {
     Git: "git.svg", Github: "github.svg", Jupyter: "jupyter.svg",
     Postman: "postman.svg", VSCode: "vscode.png", Streamlit: "Streamlit.svg",
     LangGraph: "langgraph.svg", GoogleAPI: "Google_AI_Studio_icon.svg", 
+    Bootstrap: "bootstrap.svg", MaterialUI : "materialui.svg",
+    Vercel: "vercel.svg", Netlify: "netlify.svg"
   };
 
   return (
