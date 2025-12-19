@@ -3,6 +3,29 @@ import { motion } from "framer-motion";
 export default function Experience() {
   const data = [
   {
+    year:"Des 2025 - Now",
+    title: "Mobile App Developer - PT Tiga Serangkai Pustaka Mandiri (MagangHub)",
+    location: "Surakarta, Central Java, Indonesian",
+    logo: "/ts.png",
+    desc: [
+      "Assist in the development of mobile applications (Android/iOS).",
+      "Collaborate with the backend team for API integration.",
+      "Assist in testing and ensuring optimal application performance."
+    ]
+  },
+  {
+    year: "Sept 2024 – Dec 2024",
+    title: "MSIB Kampus Merdeka Batch 7 – Cloud Computing Cohort Bangkit Academy 2024 Graduate",
+    location: "Remote",
+    logo: "/bangkit.png",
+    cert: "/sertif/bangkit.png",
+    desc: [
+      "Completed more than 900 hours of intensive learning on Google Cloud Platform, machine learning, and software engineering.",
+      "Developed Cofflyze, an AI-powered capstone project for early detection of coffee leaf diseases to support farmers in early prevention.",
+      "Collaborated in a cross-functional team (Mobile Development, Cloud Computing, and Machine Learning) to deliver a high-quality final product."
+    ]
+  },
+   {
     year: "Jan 2024 – Jun 2024",
     title: "Software Developer Intern — PT Rekaindo Global Jasa (INKA Group)",
     location: "Madiun, East Java, Indonesian",
@@ -15,28 +38,16 @@ export default function Experience() {
       "Supported server deployment and system management using Proxmox Virtual Environment, ensuring secure and stable application operations."
     ]
   },
-  {
-    year: "Sept 2024 – Dec 2024",
-    title: "MSIB Kampus Merdeka Batch 7 – Bangkit Academy 2024 Graduate",
-    location: "Cloud Computing Cohort",
-    logo: "/bangkit.png",
-    cert: "/sertif/bangkit.png",
-    desc: [
-      "Completed more than 900 hours of intensive learning on Google Cloud Platform, machine learning, and software engineering.",
-      "Developed Cofflyze, an AI-powered capstone project for early detection of coffee leaf diseases to support farmers in early prevention.",
-      "Collaborated in a cross-functional team (Mobile Development, Cloud Computing, and Machine Learning) to deliver a high-quality final product."
-    ]
-  }
 ];
 
   return (
     <section
-      id="experience"
-      className="relative overflow-hidden min-h-screen py-24 px-6
-                 bg-gradient-to-b from-[#8ec5fc] via-[#e0c3fc]/40 to-white"
-    >
+  id="experience"
+  className="relative min-h-screen py-24 pb-40 px-6"
+>
+
       {/* Floating background effects */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
         <motion.div
           animate={{ y: [0, -20, 0], opacity: [0.4, 0.8, 0.4] }}
           transition={{ duration: 10, repeat: Infinity }}
@@ -52,7 +63,6 @@ export default function Experience() {
       <div className="relative z-10 max-w-4xl mx-auto">
         <motion.div
   initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
   transition={{ duration: 0.6 }}
   className="text-center mb-12"
@@ -65,20 +75,20 @@ export default function Experience() {
     A journey of learning, building, and creating impactful technology.
   </p>
 </motion.div>
-
-
-
         <div className="relative border-l-4 border-blue-500/70 pl-8 space-y-14">
 
-          {data.map((item, index) => (
-            <motion.div
-  key={index}
-  initial={{ opacity: 0, x: -40 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6, delay: index * 0.2 }}
-  className="relative group"
->
+{data.map((item, index) => (
+  <motion.div
+    key={index}
+    className="relative"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: false }}
+    transition={{ duration: 0.6, delay: index * 0.15 }}
+  >
+
+
+    
   {/* Dot */}
   <span className="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></span>
 
