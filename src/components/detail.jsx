@@ -102,7 +102,6 @@ export default function ProjectDetail({ projects }) {
   transition={{ duration: 0.6 }}
 />
 
-
           {/* Project Info */}
           <div className="flex-1 space-y-4">
             <h1 className="text-3xl font-bold text-blue-600">{project.name}</h1>

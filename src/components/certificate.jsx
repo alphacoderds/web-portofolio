@@ -3,125 +3,130 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Certificate() {
   const certificates = [
-  // --- 📌 DESAIN / KREATIF ---
-  {
-    title: "Junior Graphic Designer",
-    org: "Badan Nasional Sertifikasi Profesi (BNSP)",
-    img: "sertif/design_graphic.png",
-  },
+    // --- 📌 DESAIN / KREATIF ---
+    {
+      title: "Junior Graphic Designer",
+      org: "Badan Nasional Sertifikasi Profesi (BNSP)",
+      img: "sertif/design_graphic.png",
+    },
 
-  // --- 📌 PEMROGRAMAN DASAR ---
-  {
-    title: "Dasar Pemrograman",
-    org: "Dicoding Indonesia",
-    img: "sertif/dicoding_pengembangsoftware.png",
-  },
-  {
-    title: "Pemrograman Python",
-    org: "Dicoding Indonesia",
-    img: "sertif/dicodingpython.png",
-  },
-  {
-    title: "Pemrograman JavaScript",
-    org: "Dicoding Indonesia",
-    img: "sertif/dicoding_javascript.png",
-  },
-  {
-    title: "Pemrograman Web",
-    org: "Dicoding Indonesia",
-    img: "sertif/dicoding_web.png",
-  },
-  {
-    title: "Dasar Git dengan Github",
-    org: "Dicoding Indonesia",
-    img: "sertif/dicoding_git.png",
-  },
+    // --- 📌 PEMROGRAMAN DASAR ---
+    {
+      title: "Dasar Pemrograman",
+      org: "Dicoding Indonesia",
+      img: "sertif/dicoding_pengembangsoftware.png",
+    },
+    {
+      title: "Pemrograman Python",
+      org: "Dicoding Indonesia",
+      img: "sertif/dicodingpython.png",
+    },
+    {
+      title: "Pemrograman JavaScript",
+      org: "Dicoding Indonesia",
+      img: "sertif/dicoding_javascript.png",
+    },
+    {
+      title: "Pemrograman Web",
+      org: "Dicoding Indonesia",
+      img: "sertif/dicoding_web.png",
+    },
+    {
+      title: "Dasar Git dengan Github",
+      org: "Dicoding Indonesia",
+      img: "sertif/dicoding_git.png",
+    },
 
-  // --- 📌 AI & MACHINE LEARNING ---
-  {
-    title: "Dasar Artificial Intelligence",
-    org: "Dicoding Indonesia",
-    img: "sertif/dicoding_ai.png",
-  },
-  {
-    title: "Artificial Intelligence",
-    org: "Digitalent X HUAWEI",
-    img: "sertif/fga_AI.png",
-  },
-  {
-    title: "Visualisasi Data",
-    org: "Dicoding Indonesia",
-    img: "sertif/dicoding_visualisasi.png",
-  },
-  {
-    title: "Generative AI",
-    org: "Dicoding Indonesia",
-    img: "sertif/dicoding_generatifai.png",
-  },
-  {
-    title: "Machine Learning",
-    org: "Dicoding Indonesia",
-    img: "sertif/dicoding_machinelearning.png",
-  },
-  {
-    title: "Penerapan Machine Learning dengan Cloud Computing",
-    org: "Dicoding Indonesia",
-    img: "sertif/dicoding_machinelearning+cloud.png",
-  },
+    // --- 📌 AI & MACHINE LEARNING ---
+    {
+      title: "Dasar Artificial Intelligence",
+      org: "Dicoding Indonesia",
+      img: "sertif/dicoding_ai.png",
+    },
+    {
+      title: "Artificial Intelligence",
+      org: "Digitalent X HUAWEI",
+      img: "sertif/fga_AI.png",
+    },
+    {
+      title: "Visualisasi Data",
+      org: "Dicoding Indonesia",
+      img: "sertif/dicoding_visualisasi.png",
+    },
+    {
+      title: "Generative AI",
+      org: "Dicoding Indonesia",
+      img: "sertif/dicoding_generatifai.png",
+    },
+    {
+      title: "Machine Learning",
+      org: "Dicoding Indonesia",
+      img: "sertif/dicoding_machinelearning.png",
+    },
+    {
+      title: "Penerapan Machine Learning dengan Cloud Computing",
+      org: "Dicoding Indonesia",
+      img: "sertif/dicoding_machinelearning+cloud.png",
+    },
 
-  // --- 📌 CLOUD COMPUTING ---
-  {
-    title: "Cloud Computing",
-    org: "Bangkit Academy 2024",
-    img: "sertif/bangkit.png"
-  },
-  {
-    title: "Google Cloud Engineer",
-    org: "Dicoding Indonesia",
-    img: "sertif/dicoding_cloud.png",
-  },
-  {
-    title: "Cloud Computing",
-    org: "Alibaba Cloud Certified Associate",
-    img: "sertif/alibaba_aca.png",
-  },
-  {
-    title: "AWS Cloud Foundations",
-    org: "Universitas Internasional Batam",
-    img: "sertif/aws_uib.png",
-  },
+    // --- 📌 CLOUD COMPUTING ---
+    {
+      title: "Cloud Computing",
+      org: "Bangkit Academy 2024",
+      img: "sertif/bangkit.png",
+    },
+    {
+      title: "Google Cloud Engineer",
+      org: "Dicoding Indonesia",
+      img: "sertif/dicoding_cloud.png",
+    },
+    {
+      title: "Cloud Computing",
+      org: "Alibaba Cloud Certified Associate",
+      img: "sertif/alibaba_aca.png",
+    },
+    {
+      title: "AWS Cloud Foundations",
+      org: "Universitas Internasional Batam",
+      img: "sertif/aws_uib.png",
+    },
+    {
+      title: "AWS re/Start Program",
+      org: "Orbit Future Academy",
+      img: "sertif/awsrestart.png",
+    },
 
-  // --- 📌 CYBERSECURITY ---
-  {
-    title: "Foundations of Cybersecurity",
-    org: "Coursera",
-    img: "sertif/coursera_cyber.png",
-  },
-  {
-    title: "Tools of the Trade: Linux and SQL",
-    org: "Coursera",
-    img: "sertif/coursera_linuxsql.png",
-  },
-  {
-    title: "Introduction to Cybersecurity",
-    org: "Cisco Networking Academy",
-    img: "sertif/cisco_cyber.png",
-  },
+    // --- 📌 CYBERSECURITY ---
+    {
+      title: "Foundations of Cybersecurity",
+      org: "Coursera",
+      img: "sertif/coursera_cyber.png",
+    },
+    {
+      title: "Tools of the Trade: Linux and SQL",
+      org: "Coursera",
+      img: "sertif/coursera_linuxsql.png",
+    },
+    {
+      title: "Introduction to Cybersecurity",
+      org: "Cisco Networking Academy",
+      img: "sertif/cisco_cyber.png",
+    },
 
-  // --- 📌 SOFTWARE ENGINEERING & KHUSUS ---
-  {
-    title: "Code Generation Optimization",
-    org: "IBM SkillsBuild",
-    img: "sertif/ibm_code.png",
-  },
-  {
-    title: "Java Fundamental & Foundations",
-    org: "Digitalent",
-    img: "sertif/tsa_java.png",
-  }
-];
+    // --- 📌 SOFTWARE ENGINEERING & KHUSUS ---
+    {
+      title: "Code Generation Optimization",
+      org: "IBM SkillsBuild",
+      img: "sertif/ibm_code.png",
+    },
+    {
+      title: "Java Fundamental & Foundations",
+      org: "Digitalent",
+      img: "sertif/tsa_java.png",
+    },
+  ];
 
- const [visible, setVisible] = useState(6); // tampil awal 6
+  const [visible, setVisible] = useState(6); // tampil awal 6
   const [modal, setModal] = useState(null);
 
   return (

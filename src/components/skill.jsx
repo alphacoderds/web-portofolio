@@ -1,77 +1,128 @@
 import { motion } from "framer-motion";
 
-// ===============================
 // SKILL DATA
-// ===============================
 const skillCategories = [
   {
     category: "Frontend Development",
     skills: [
-      { name: "CSS" }, { name: "HTML" }, { name: "JavaScript" },
-      { name: "ReactJS" }, { name: "TailwindCSS" }, {name: "Bootstrap"},
-      { name: "MaterialUI"}, { name: "Vercel"}, { name: "Netlify"},
-    ]
+      { name: "CSS" },
+      { name: "HTML" },
+      { name: "JavaScript" },
+      { name: "ReactJS" },
+      { name: "TailwindCSS" },
+      { name: "Bootstrap" },
+      { name: "MaterialUI" },
+      { name: "Vercel" },
+      { name: "Netlify" },
+    ],
   },
   {
     category: "Backend Development",
     skills: [
-      { name: "Firebase" }, { name: "Flask" }, { name: "Laravel" },
-      { name: "MySQL" }, { name: "NodeJS" }, { name: "PostgreSQL" },
-      { name: "Streamlit" }
-    ]
+      { name: "Firebase" },
+      { name: "Flask" },
+      { name: "Laravel" },
+      { name: "MySQL" },
+      { name: "NodeJS" },
+      { name: "PostgreSQL" },
+      { name: "Streamlit" },
+    ],
   },
   {
     category: "Mobile",
-    skills: [
-      { name: "Dart" }, { name: "Flutter" }, { name: "Kotlin" },
-    ]
+    skills: [{ name: "Dart" }, { name: "Flutter" }, { name: "Kotlin" }],
   },
   {
     category: "Machine Learning",
     skills: [
-      { name: "Keras" }, { name: "Matplotlib" }, { name: "NumPy" },
-      { name: "Pandas" }, { name: "Python" }, { name: "Scikitlearn" },
-      { name: "Seaborn" }, { name: "TensorFlow" }, { name: "LangGraph"}
-    ]
+      { name: "Keras" },
+      { name: "Matplotlib" },
+      { name: "NumPy" },
+      { name: "Pandas" },
+      { name: "Python" },
+      { name: "Scikitlearn" },
+      { name: "Seaborn" },
+      { name: "TensorFlow" },
+      { name: "LangGraph" },
+    ],
   },
   {
     category: "Cloud Computing & AI",
     skills: [
-      { name: "AlibabaCloud" }, { name: "GCP" }, { name: "AWS" }, { name: "GoogleAPI" }
-    ]
+      { name: "AlibabaCloud" },
+      { name: "GCP" },
+      { name: "AWS" },
+      { name: "GoogleAPI" },
+    ],
   },
   {
     category: "Tools & Others",
     skills: [
-      { name: "Git" }, { name: "Github" }, { name: "Figma" },
-      { name: "Postman" }, { name: "VSCode" }, { name: "Jupyter" }, { name: "Docker" },
-      { name: "GoogleColab"}, { name: "Anaconda" }, { name: "Canva" }, { name: "CorelDraw"}
-    ]
-  }
+      { name: "Git" },
+      { name: "Github" },
+      { name: "Figma" },
+      { name: "Postman" },
+      { name: "VSCode" },
+      { name: "Jupyter" },
+      { name: "Docker" },
+      { name: "GoogleColab" },
+      { name: "Anaconda" },
+      { name: "Canva" },
+      { name: "CorelDraw" },
+    ],
+  },
 ];
 
-// ===============================
 // ICON MAP
-// ===============================
 const iconMap = {
-  ReactJS: "react.svg", HTML: "html.svg", CSS: "css.svg",
-  TailwindCSS: "tailwind.svg", JavaScript: "javascript.svg", Bootstrap: "bootstrap.svg",
-  Vercel: "vercel.svg", Netlify: "netlify.svg", MaterialUI : "materialui.svg",
+  ReactJS: "react.svg",
+  HTML: "html.svg",
+  CSS: "css.svg",
+  TailwindCSS: "tailwind.svg",
+  JavaScript: "javascript.svg",
+  Bootstrap: "bootstrap.svg",
+  Vercel: "vercel.svg",
+  Netlify: "netlify.svg",
+  MaterialUI: "materialui.svg",
 
-  NodeJS: "node.svg", Firebase: "firebase.svg", Laravel: "laravel.svg",
-  MySQL: "mysql.svg", PostgreSQL: "postgresql.svg", Streamlit: "Streamlit.svg",
+  NodeJS: "node.svg",
+  Firebase: "firebase.svg",
+  Laravel: "laravel.svg",
+  MySQL: "mysql.svg",
+  PostgreSQL: "postgresql.svg",
+  Streamlit: "Streamlit.svg",
 
-  Flutter: "flutter.svg", Dart: "dart.svg", Kotlin: "kotlin.png",
+  Flutter: "flutter.svg",
+  Dart: "dart.svg",
+  Kotlin: "kotlin.png",
 
-  Python: "python.svg", TensorFlow: "tensorflow.svg", Keras: "keras.svg",
-  Scikitlearn: "scikitlearn.svg", Pandas: "pandas.svg",
-  NumPy: "numpy.svg", Matplotlib: "matplotlib.svg", Seaborn: "seaborn.svg", LangGraph: "langgraph.svg",
+  Python: "python.svg",
+  TensorFlow: "tensorflow.svg",
+  Keras: "keras.svg",
+  Scikitlearn: "scikitlearn.svg",
+  Pandas: "pandas.svg",
+  NumPy: "numpy.svg",
+  Matplotlib: "matplotlib.svg",
+  Seaborn: "seaborn.svg",
+  LangGraph: "langgraph.svg",
 
-  GCP: "gcp.svg", AWS: "aws.svg", AlibabaCloud: "alibabacloud.svg", GoogleAPI: "Google_AI_Studio_icon.svg",
+  GCP: "gcp.svg",
+  AWS: "aws.svg",
+  AlibabaCloud: "alibabacloud.svg",
+  GoogleAPI: "Google_AI_Studio_icon.svg",
 
-  Docker: "docker.svg", Figma: "figma.svg", Flask: "flask.svg",
-  Git: "git.svg", Github: "github.svg", Jupyter: "jupyter.svg",
-  Postman: "postman.svg", VSCode: "vscode.png", GoogleColab: "gcolab.svg", CorelDraw: "coreldraw.svg", Anaconda: "anaconda.svg", Canva: "canva.svg"
+  Docker: "docker.svg",
+  Figma: "figma.svg",
+  Flask: "flask.svg",
+  Git: "git.svg",
+  Github: "github.svg",
+  Jupyter: "jupyter.svg",
+  Postman: "postman.svg",
+  VSCode: "vscode.png",
+  GoogleColab: "gcolab.svg",
+  CorelDraw: "coreldraw.svg",
+  Anaconda: "anaconda.svg",
+  Canva: "canva.svg",
 };
 
 // CATEGORY COLORS
@@ -87,7 +138,7 @@ const categoryColors = [
 const categoryIcons = {
   "Frontend Development": "🎨",
   "Backend Development": "🛠️",
-  "Mobile": "📱",
+  Mobile: "📱",
   "Machine Learning": "🤖",
   "Cloud Computing": "☁️",
   "Tools & Others": "⚙️",
@@ -128,7 +179,6 @@ export default function Skill() {
 
       {/* MAIN CONTENT */}
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center space-y-16">
-
         {/* TITLE */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -143,7 +193,6 @@ export default function Skill() {
 
         {/* CATEGORY CARD GRID (2 per row) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
-
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.category}
@@ -155,14 +204,11 @@ export default function Skill() {
             >
               {/* Category Title */}
               <h3
-  className={`text-3xl font-bold mb-3 bg-gradient-to-r 
+                className={`text-3xl font-bold mb-3 bg-gradient-to-r 
     ${categoryColors[index]} text-transparent bg-clip-text`}
->
-  {categoryIcons[category.category]} {category.category}
-</h3>
-
-
-
+              >
+                {categoryIcons[category.category]} {category.category}
+              </h3>
 
               {/* Skill icons */}
               <div className="grid grid-cols-3 sm:grid-cols-4 gap-5">
@@ -188,10 +234,8 @@ export default function Skill() {
                   </motion.div>
                 ))}
               </div>
-
             </motion.div>
           ))}
-
         </div>
       </div>
     </section>

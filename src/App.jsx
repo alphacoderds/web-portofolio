@@ -121,6 +121,16 @@ export default function App() {
   { title: "Learning Resources", desc: "Provides explanations, insights, and educational content about MBTI types." },
   { title: "Web-Based Interface", desc: "Built with Streamlit for a clean, fast, and accessible user experience." }
 ]
+},
+{
+  id: 7,
+  name:"",
+  desc: "",
+  img: "",
+  github: "",
+  demo: "",
+  tech: "",
+  features: "",
 }
 
 ];

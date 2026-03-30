@@ -31,7 +31,7 @@ export default function Project({ projects }) {
           My <span className="text-blue-600">Projects</span>
         </h2>
         <p className="text-gray-700 text-xl mt-3 leading-8">
-          A collection of applications I’ve built using modern technologies
+          A collection of applications I’ve built using modern technologies. A collection of application
         </p>
       </div>
 
@@ -126,7 +126,7 @@ export default function Project({ projects }) {
       className="px-6 py-3 rounded-full bg-gray-800 hover:bg-black 
                  text-white transition shadow-lg flex items-center justify-center gap-2 mx-auto w-fit"
     >
-      <FaGithub size={20} /> See More on GitHub
+      <FaGithub size={20} /> See more on GitHub
     </a>
   </div>
 )}
