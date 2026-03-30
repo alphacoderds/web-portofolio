@@ -45,7 +45,7 @@ export default function Certificate() {
     },
     {
       title: "Artificial Intelligence",
-      org: "Digitalent X HUAWEI",
+      org: "Digitalent x HUAWEI",
       img: "sertif/fga_AI.png",
     },
     {
@@ -126,7 +126,7 @@ export default function Certificate() {
     },
   ];
 
-  const [visible, setVisible] = useState(6); // tampil awal 6
+  const [visible, setVisible] = useState(6);
   const [modal, setModal] = useState(null);
 
   return (
@@ -143,7 +143,7 @@ export default function Certificate() {
           My <span className="text-blue-600">Certificates</span>
         </h2>
         <p className="text-gray-600 text-xl mt-3 leading-8">
-          List of professional certifications and programs I have completed.
+          List of professional certifications and bootcamp programs I have completed.
         </p>
       </motion.div>
 
