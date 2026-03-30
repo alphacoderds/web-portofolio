@@ -60,6 +60,7 @@ const skillCategories = [
     skills: [
       { name: "Git" },
       { name: "Github" },
+      { name: "Gitlab" },
       { name: "Figma" },
       { name: "Postman" },
       { name: "VSCode" },
@@ -116,6 +117,7 @@ const iconMap = {
   Flask: "flask.svg",
   Git: "git.svg",
   Github: "github.svg",
+  Gitlab: "gitlab.svg",
   Jupyter: "jupyter.svg",
   Postman: "postman.svg",
   VSCode: "vscode.png",
@@ -191,7 +193,7 @@ export default function Skill() {
           </p>
         </motion.h2>
 
-        {/* CATEGORY CARD GRID (2 per row) */}
+        {/* CATEGORY CARD GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
           {skillCategories.map((category, index) => (
             <motion.div

@@ -7,21 +7,46 @@ export default function Project({ projects }) {
   const [visible, setVisible] = useState(2);
 
   const iconMap = {
-    ReactJS: "react.svg", HTML: "html.svg", CSS: "css.svg",
-    TailwindCSS: "tailwind.svg", JavaScript: "javascript.svg",
-    NodeJS: "node.svg", Firebase: "firebase.svg", Laravel: "laravel.svg",
-    MySQL: "mysql.svg", PostgreSQL: "postgresql.svg",
-    Flutter: "flutter.svg", Dart: "dart.svg", Kotlin: "kotlin.png",
-    Python: "python.svg", TensorFlow: "tensorflow.svg", Keras: "keras.svg",
-    Scikitlearn: "scikitlearn.svg", Pandas: "pandas.svg",
-    NumPy: "numpy.svg", Matplotlib: "matplotlib.svg", Seaborn: "seaborn.svg",
-    GCP: "gcp.svg", AWS: "aws.svg", AlibabaCloud: "alibabacloud.svg",
-    Docker: "docker.svg", Figma: "figma.svg", Flask: "flask.svg",
-    Git: "git.svg", Github: "github.svg", Jupyter: "jupyter.svg",
-    Postman: "postman.svg", VSCode: "vscode.png", Streamlit: "Streamlit.svg",
-    LangGraph: "langgraph.svg", GoogleAPI: "Google_AI_Studio_icon.svg", 
-    Bootstrap: "bootstrap.svg", MaterialUI : "materialui.svg",
-    Vercel: "vercel.svg", Netlify: "netlify.svg"
+    ReactJS: "react.svg",
+    HTML: "html.svg",
+    CSS: "css.svg",
+    TailwindCSS: "tailwind.svg",
+    JavaScript: "javascript.svg",
+    NodeJS: "node.svg",
+    Firebase: "firebase.svg",
+    Laravel: "laravel.svg",
+    MySQL: "mysql.svg",
+    PostgreSQL: "postgresql.svg",
+    Flutter: "flutter.svg",
+    Dart: "dart.svg",
+    Kotlin: "kotlin.png",
+    Python: "python.svg",
+    TensorFlow: "tensorflow.svg",
+    Keras: "keras.svg",
+    Scikitlearn: "scikitlearn.svg",
+    Pandas: "pandas.svg",
+    NumPy: "numpy.svg",
+    Matplotlib: "matplotlib.svg",
+    Seaborn: "seaborn.svg",
+    GCP: "gcp.svg",
+    AWS: "aws.svg",
+    AlibabaCloud: "alibabacloud.svg",
+    Docker: "docker.svg",
+    Figma: "figma.svg",
+    Flask: "flask.svg",
+    Git: "git.svg",
+    Github: "github.svg",
+    Gitlab: "gitlab.svg",
+    Jupyter: "jupyter.svg",
+    Postman: "postman.svg",
+    VSCode: "vscode.png",
+    Streamlit: "Streamlit.svg",
+    LangGraph: "langgraph.svg",
+    GoogleAPI: "Google_AI_Studio_icon.svg",
+    Bootstrap: "bootstrap.svg",
+    MaterialUI: "materialui.svg",
+    Vercel: "vercel.svg",
+    Netlify: "netlify.svg",
   };
 
   return (
@@ -31,7 +56,8 @@ export default function Project({ projects }) {
           My <span className="text-blue-600">Projects</span>
         </h2>
         <p className="text-gray-700 text-xl mt-3 leading-8">
-          A collection of applications I’ve built using modern technologies. A collection of application
+          A collection of applications I’ve built using modern technologies. A
+          collection of application
         </p>
       </div>
 
@@ -44,13 +70,19 @@ export default function Project({ projects }) {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             className="bg-blue-50 rounded-2xl shadow-lg overflow-hidden hover:-translate-y-2 transition cursor-pointer"
           >
-            <img src={p.img} alt={p.name} className="w-full h-76 object-cover" />
+            <img
+              src={p.img}
+              alt={p.name}
+              className="w-full h-76 object-cover"
+            />
             <div className="p-6 space-y-3">
               <h3 className="text-2xl font-semibold text-blue-600">{p.name}</h3>
               <p className="text-gray-600">{p.desc}</p>
 
               {/* Tech Stack */}
-              <p className="text-sm font-medium text-gray-500 mt-2">TECH STACK:</p>
+              <p className="text-sm font-medium text-gray-500 mt-2">
+                TECH STACK:
+              </p>
               <div className="flex flex-wrap gap-2 mt-1">
                 {p.tech.map((t, i) => (
                   <motion.div
@@ -58,8 +90,14 @@ export default function Project({ projects }) {
                     whileHover={{ scale: 1.1 }}
                     className="flex items-center gap-1 bg-white shadow px-2 py-1 rounded-full transition-transform"
                   >
-                    <img src={iconMap[t]} alt={t} className="w-5 h-5 object-contain" />
-                    <span className="text-xs font-medium text-gray-700">{t}</span>
+                    <img
+                      src={iconMap[t]}
+                      alt={t}
+                      className="w-5 h-5 object-contain"
+                    />
+                    <span className="text-xs font-medium text-gray-700">
+                      {t}
+                    </span>
                   </motion.div>
                 ))}
               </div>
@@ -106,33 +144,30 @@ export default function Project({ projects }) {
         ))}
       </div>
 
-  {/* VIEW MORE BUTTON */}
-{visible < projects.length ? (
-  <div className="text-center mt-10">
-    <button
-      onClick={() => setVisible(projects.length)}
-      className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 
+      {/* VIEW MORE BUTTON */}
+      {visible < projects.length ? (
+        <div className="text-center mt-10">
+          <button
+            onClick={() => setVisible(projects.length)}
+            className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 
                  text-white transition shadow-lg"
-    >
-      View More
-    </button>
-  </div>
-) : (
-  <div className="text-center mt-10">
-    <a
-      href="https://github.com/alphacoderds"
-      target="_blank"
-      rel="noreferrer"
-      className="px-6 py-3 rounded-full bg-gray-800 hover:bg-black 
+          >
+            View More
+          </button>
+        </div>
+      ) : (
+        <div className="text-center mt-10">
+          <a
+            href="https://github.com/alphacoderds"
+            target="_blank"
+            rel="noreferrer"
+            className="px-6 py-3 rounded-full bg-gray-800 hover:bg-black 
                  text-white transition shadow-lg flex items-center justify-center gap-2 mx-auto w-fit"
-    >
-      <FaGithub size={20} /> See more on GitHub
-    </a>
-  </div>
-)}
-
-      
+          >
+            <FaGithub size={20} /> See more on GitHub
+          </a>
+        </div>
+      )}
     </section>
   );
 }
-

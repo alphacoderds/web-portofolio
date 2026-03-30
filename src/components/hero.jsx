@@ -95,7 +95,7 @@ export default function Hero() {
             { href: "https://github.com/alphacoderds", img: "/github.svg", alt: "GitHub" },
             { href: "https://linkedin.com/in/rahmandaputriradisa", img: "/linkedin.png", alt: "LinkedIn" },
             { href: "https://instagram.com/rhmndapr", img: "/instagram.png", alt: "Instagram" },
-            { href: "mailto:rahmandapr20@gmail.com", img: "/gmail.png", alt: "Email" }
+            { href: "mailto: rahmandapr20@gmail.com", img: "/gmail.png", alt: "Email" }
           ].map((item, i) => (
             <motion.a
               key={i}

@@ -61,7 +61,8 @@ export default function Contact() {
             Get in <span className="text-blue-600">Touch</span>
           </h2>
           <p className="text-gray-600 text-lg sm:text-xl">
-            I’m always open to collaborating on projects or having discussions. Connect with me via any of the channels below.
+            I’m always open to collaborating on projects or having discussions.
+            Connect with me via any of the channels below.
           </p>
 
           {/* Contact cards */}
@@ -94,8 +95,8 @@ export default function Contact() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        © 2025 Rahmanda Putri Radisa — All Rights Reserved
-        <p className="text-sm">Last Update: Desember 2025</p>
+        © 2026 Rahmanda Putri Radisa — All Rights Reserved
+        <p className="text-sm">Last Update: 30 Maret 2026</p>
       </motion.footer>
     </section>
   );

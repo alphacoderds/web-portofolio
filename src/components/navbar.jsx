@@ -6,7 +6,15 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const menu = ["Home", "About", "Skills", "Projects", "Experience", "Certificate", "Contact"];
+  const menu = [
+    "Home",
+    "About",
+    "Skills",
+    "Projects",
+    "Experience",
+    "Certificate",
+    "Contact",
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -23,7 +31,6 @@ export default function Navbar() {
       `}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
-
         {/* LOGO */}
         <h1 className="text-2xl font-extrabold tracking-wide text-blue-600">
           <span className="text-gray-900">Manda</span>.Portfolio
@@ -61,41 +68,39 @@ export default function Navbar() {
       </div>
 
       {/* MOBILE MENU DROPDOWN */}
-    {/* MOBILE MENU DROPDOWN (ANIMATED) */}
-<AnimatePresence>
-  {open && (
-    <motion.div
-      initial={{ opacity: 0, y: -15 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -15 }}
-      transition={{ duration: 0.25 }}
-      className="
+      {/* MOBILE MENU DROPDOWN (ANIMATED) */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -15 }}
+            transition={{ duration: 0.25 }}
+            className="
         md:hidden bg-white/95 backdrop-blur-xl shadow-xl
         rounded-b-xl px-6 py-4
       "
-    >
-      <ul className="flex flex-col gap-4">
-        {menu.map((item) => (
-          <li key={item}>
-            <a
-              href={`#${item.toLowerCase()}`}
-              onClick={() => setOpen(false)}
-              className="
+          >
+            <ul className="flex flex-col gap-4">
+              {menu.map((item) => (
+                <li key={item}>
+                  <a
+                    href={`#${item.toLowerCase()}`}
+                    onClick={() => setOpen(false)}
+                    className="
                 block text-gray-900 font-semibold tracking-wide
                 hover:text-blue-600 transition-all duration-200
                 text-lg
               "
-            >
-              {item}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </motion.div>
-  )}
-</AnimatePresence>
-
-
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }

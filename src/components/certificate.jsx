@@ -3,14 +3,14 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Certificate() {
   const certificates = [
-    // --- 📌 DESAIN / KREATIF ---
+    // --- DESAIN / KREATIF ---
     {
       title: "Junior Graphic Designer",
       org: "Badan Nasional Sertifikasi Profesi (BNSP)",
       img: "sertif/design_graphic.png",
     },
 
-    // --- 📌 PEMROGRAMAN DASAR ---
+    // --- PEMROGRAMAN DASAR ---
     {
       title: "Dasar Pemrograman",
       org: "Dicoding Indonesia",
@@ -37,7 +37,7 @@ export default function Certificate() {
       img: "sertif/dicoding_git.png",
     },
 
-    // --- 📌 AI & MACHINE LEARNING ---
+    // --- AI & MACHINE LEARNING ---
     {
       title: "Dasar Artificial Intelligence",
       org: "Dicoding Indonesia",
@@ -69,7 +69,7 @@ export default function Certificate() {
       img: "sertif/dicoding_machinelearning+cloud.png",
     },
 
-    // --- 📌 CLOUD COMPUTING ---
+    // --- CLOUD COMPUTING ---
     {
       title: "Cloud Computing",
       org: "Bangkit Academy 2024",
@@ -96,7 +96,7 @@ export default function Certificate() {
       img: "sertif/awsrestart.png",
     },
 
-    // --- 📌 CYBERSECURITY ---
+    // --- CYBERSECURITY ---
     {
       title: "Foundations of Cybersecurity",
       org: "Coursera",
@@ -113,7 +113,7 @@ export default function Certificate() {
       img: "sertif/cisco_cyber.png",
     },
 
-    // --- 📌 SOFTWARE ENGINEERING & KHUSUS ---
+    // --- SOFTWARE ENGINEERING & KHUSUS ---
     {
       title: "Code Generation Optimization",
       org: "IBM SkillsBuild",
@@ -143,7 +143,8 @@ export default function Certificate() {
           My <span className="text-blue-600">Certificates</span>
         </h2>
         <p className="text-gray-600 text-xl mt-3 leading-8">
-          List of professional certifications and bootcamp programs I have completed.
+          List of professional certifications and bootcamp programs I have
+          completed.
         </p>
       </motion.div>
 
