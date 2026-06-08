@@ -96,7 +96,7 @@ export default function App() {
     },
 
     {
-      id: 3,
+      id: 3, //Cofflyze
       name: "Cofflyze – Coffee Leaf Disease Analyzer",
       desc: "Cofflyze is a smart mobile app built to detect coffee leaf diseases using CNN-based image processing, helping farmers with early detection and faster prevention.",
       img: "/cofflyze.png",
@@ -132,7 +132,7 @@ export default function App() {
     },
 
     {
-      id: 4,
+      id: 4, // RekaChain Admin App Web
       name: "RekaChain Admin Website",
       desc: "An internal admin platform designed to manage production data, monitor workflow progress, validate user scans, and oversee the entire RekaChain manufacturing process.",
       img: "/rekachain website.png",
@@ -180,7 +180,7 @@ export default function App() {
 
     {
       id: 5,
-      name: "DiesCraft Website",
+      name: "DiesCraft Website", // Diescraft UMKM Profile Company
       desc: "A modern and responsive landing page created for the DiesCraft organization to showcase their products, activities, and community presence.",
       img: "/Presentation Proposal Portofolio Modern Putih Krem (1).png",
       github: "https://github.com/ritaapr/Dies-Craft",
@@ -214,8 +214,8 @@ export default function App() {
     },
 
     {
-      id: 6,
-      name: "MBTI Chatbot Edukasi",
+      id: 6, // MBTI Chatboot with API Gemini
+      name: "MBTI Chatbot Edukasi (Project Bootcamp)",
       desc: "A Streamlit-based educational MBTI chatbot that provides a personality quiz and an interactive AI assistant powered by Google Gemini and LangChain.",
       img: "/mbti.jpg",
       github: "https://github.com/alphacoderds/MBTI-Chatbot-Edukasi",
@@ -240,19 +240,23 @@ export default function App() {
         },
       ],
     },
-    {
-      id: 7, // SMARD
-      name: "",
-      desc: "",
-      img: "",
-      github: "",
-      demo: "",
-      tech: ["Flutter", "Postman", "API"],
-      features: [
-        { title: "", desc: "" },
-        { title: "", desc: "" },
-      ],
-    },
+    // {
+    //   id: 7, // SMARD (On Progress)
+    //   name: "SMARD (On Progress)",
+    //   desc: "mobile application designed to provide real-time monitoring and management of smart agriculture systems, integrating IoT sensors, AI analytics, and user-friendly interfaces to optimize farming operations and enhance productivity with 4 levels of user access: Student, Teacher, Parent, and Alumni",
+    //   img: "",
+    //   github: "",
+    //   demo: "-",
+    //   tech: ["Flutter", "Postman", "API"],
+    //   features: [
+    //     { title: "", desc: "" },
+    //     { title: "", desc: "" },
+    //   ],
+    // },
+    // {
+    //   id: 8,
+      
+    // }
   ];
 
   return (

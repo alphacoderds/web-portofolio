@@ -83,9 +83,7 @@ export default function Experience() {
               viewport={{ once: false }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
             >
-              {/* Dot */}
               <span className="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></span>
-
               <div
                 className="bg-white/70 backdrop-blur-md p-6 rounded-2xl shadow-md border border-white/40
                   group-hover:shadow-xl transition duration-300"
@@ -95,7 +93,6 @@ export default function Experience() {
                   {item.logo && (
                     <img src={item.logo} className="w-12 h-12 object-contain" />
                   )}
-
                   <div>
                     <h3 className="text-2xl font-bold text-blue-600">
                       {item.year}

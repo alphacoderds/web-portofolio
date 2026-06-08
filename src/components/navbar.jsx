@@ -68,7 +68,6 @@ export default function Navbar() {
       </div>
 
       {/* MOBILE MENU DROPDOWN */}
-      {/* MOBILE MENU DROPDOWN (ANIMATED) */}
       <AnimatePresence>
         {open && (
           <motion.div
