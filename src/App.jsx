@@ -240,23 +240,22 @@ export default function App() {
         },
       ],
     },
-    // {
-    //   id: 7, // SMARD (On Progress)
-    //   name: "SMARD (On Progress)",
-    //   desc: "mobile application designed to provide real-time monitoring and management of smart agriculture systems, integrating IoT sensors, AI analytics, and user-friendly interfaces to optimize farming operations and enhance productivity with 4 levels of user access: Student, Teacher, Parent, and Alumni",
-    //   img: "",
-    //   github: "",
-    //   demo: "-",
-    //   tech: ["Flutter", "Postman", "API"],
-    //   features: [
-    //     { title: "", desc: "" },
-    //     { title: "", desc: "" },
-    //   ],
-    // },
-    // {
-    //   id: 8,
-      
-    // }
+    {
+      id: 7, // SMARD (On Progress)
+      name: "SMARD (On Progress)",
+      desc: "mobile application designed to provide real-time monitoring and management of smart agriculture systems, integrating IoT sensors, AI analytics, and user-friendly interfaces to optimize farming operations and enhance productivity with 4 levels of user access: Student, Teacher, Parent, and Alumni",
+      img: "smard_mobile.png",
+      github: "",
+      demo: "-",
+      tech: ["Flutter", "Dart", "Postman", "API"],
+      features: [
+        { title: "", desc: "" },
+        { title: "", desc: "" },
+      ],
+    },
+    {
+      id: 8,
+    },
   ];
 
   return (
